@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D03FC8821DEF0BE6009EB262 /* HOBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC87C1DEF0BE6009EB262 /* HOBaseTabBarController.swift */; };
 		D0C0F5721DEE728100162E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0F5711DEE728100162E55 /* AppDelegate.swift */; };
-		D0C0F5741DEE728100162E55 /* HOTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0F5731DEE728100162E55 /* HOTabBarController.swift */; };
 		D0C0F5791DEE728100162E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C0F5781DEE728100162E55 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D03FC87C1DEF0BE6009EB262 /* HOBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOBaseTabBarController.swift; sourceTree = "<group>"; };
 		D0C0F56E1DEE728100162E55 /* Weibo-Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weibo-Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C0F5711DEE728100162E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0C0F5731DEE728100162E55 /* HOTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HOTabBarController.swift; path = ../../../HOTabBarController.swift; sourceTree = "<group>"; };
 		D0C0F5781DEE728100162E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C0F57D1DEE728100162E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -31,6 +31,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D03FC8781DEF0BE6009EB262 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D03FC8791DEF0BE6009EB262 /* Model */,
+				D03FC87A1DEF0BE6009EB262 /* View */,
+				D03FC8811DEF0BE6009EB262 /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D03FC8791DEF0BE6009EB262 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03FC87A1DEF0BE6009EB262 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D03FC87B1DEF0BE6009EB262 /* Base */,
+				D03FC87D1DEF0BE6009EB262 /* Discovery */,
+				D03FC87E1DEF0BE6009EB262 /* Home */,
+				D03FC87F1DEF0BE6009EB262 /* Message */,
+				D03FC8801DEF0BE6009EB262 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D03FC87B1DEF0BE6009EB262 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D03FC87C1DEF0BE6009EB262 /* HOBaseTabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D03FC87D1DEF0BE6009EB262 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		D03FC87E1DEF0BE6009EB262 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D03FC87F1DEF0BE6009EB262 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		D03FC8801DEF0BE6009EB262 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D03FC8811DEF0BE6009EB262 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D03FC8831DEF0BF1009EB262 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D03FC8841DEF0BF1009EB262 /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D03FC8841DEF0BF1009EB262 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D0C0F5651DEE728100162E55 = {
 			isa = PBXGroup;
 			children = (
@@ -50,186 +137,11 @@
 		D0C0F5701DEE728100162E55 /* Weibo-Pattern */ = {
 			isa = PBXGroup;
 			children = (
-				D0C0F5841DEEF36000162E55 /* Classes */,
-				D0C0F5831DEEF35000162E55 /* Tools */,
+				D03FC8781DEF0BE6009EB262 /* Classes */,
+				D03FC8831DEF0BF1009EB262 /* Tools */,
 				D0C0F59A1DEEF38E00162E55 /* Others */,
 			);
 			path = "Weibo-Pattern";
-			sourceTree = "<group>";
-		};
-		D0C0F5831DEEF35000162E55 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		D0C0F5841DEEF36000162E55 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D0C0F5851DEEF36000162E55 /* Base */,
-				D0C0F5891DEEF36000162E55 /* Discovery */,
-				D0C0F58D1DEEF36000162E55 /* Home */,
-				D0C0F5911DEEF36000162E55 /* Message */,
-				D0C0F5951DEEF36000162E55 /* Profile */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		D0C0F5851DEEF36000162E55 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				D0C0F5861DEEF36000162E55 /* Controller */,
-				D0C0F5871DEEF36000162E55 /* Model */,
-				D0C0F5881DEEF36000162E55 /* View */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		D0C0F5861DEEF36000162E55 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D0C0F5731DEE728100162E55 /* HOTabBarController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D0C0F5871DEEF36000162E55 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D0C0F5881DEEF36000162E55 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D0C0F5891DEEF36000162E55 /* Discovery */ = {
-			isa = PBXGroup;
-			children = (
-				D0C0F58A1DEEF36000162E55 /* Controller */,
-				D0C0F58B1DEEF36000162E55 /* Model */,
-				D0C0F58C1DEEF36000162E55 /* View */,
-			);
-			path = Discovery;
-			sourceTree = "<group>";
-		};
-		D0C0F58A1DEEF36000162E55 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D0C0F58B1DEEF36000162E55 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D0C0F58C1DEEF36000162E55 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D0C0F58D1DEEF36000162E55 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				D0C0F58E1DEEF36000162E55 /* Controller */,
-				D0C0F58F1DEEF36000162E55 /* Model */,
-				D0C0F5901DEEF36000162E55 /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		D0C0F58E1DEEF36000162E55 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D0C0F58F1DEEF36000162E55 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D0C0F5901DEEF36000162E55 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D0C0F5911DEEF36000162E55 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				D0C0F5921DEEF36000162E55 /* Controller */,
-				D0C0F5931DEEF36000162E55 /* Model */,
-				D0C0F5941DEEF36000162E55 /* View */,
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		D0C0F5921DEEF36000162E55 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D0C0F5931DEEF36000162E55 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D0C0F5941DEEF36000162E55 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D0C0F5951DEEF36000162E55 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				D0C0F5961DEEF36000162E55 /* Controller */,
-				D0C0F5971DEEF36000162E55 /* Model */,
-				D0C0F5981DEEF36000162E55 /* View */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		D0C0F5961DEEF36000162E55 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D0C0F5971DEEF36000162E55 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D0C0F5981DEEF36000162E55 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D0C0F59A1DEEF38E00162E55 /* Others */ = {
@@ -314,8 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0C0F5741DEE728100162E55 /* HOTabBarController.swift in Sources */,
 				D0C0F5721DEE728100162E55 /* AppDelegate.swift in Sources */,
+				D03FC8821DEF0BE6009EB262 /* HOBaseTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
