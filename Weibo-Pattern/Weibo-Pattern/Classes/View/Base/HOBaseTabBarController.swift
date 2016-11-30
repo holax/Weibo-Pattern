@@ -15,7 +15,7 @@ class HOBaseTabBarController: UITabBarController
     {
         super.viewDidLoad()
         
-        let HOTabBar = HOCommonTabBar()
+        let HOTabBar = HOBottomTabBar()
         
         HOTabBar.HODelegate = self
         
@@ -25,6 +25,7 @@ class HOBaseTabBarController: UITabBarController
             print(self!)
         }
         
+        setValue(HOTabBar, forKey: "tabBar")
         
         
         

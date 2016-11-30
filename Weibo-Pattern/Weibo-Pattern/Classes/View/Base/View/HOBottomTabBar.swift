@@ -14,7 +14,7 @@ protocol HOTabBarDelegate: NSObjectProtocol
 }
 
 
-class HOCommonTabBar: UITabBar
+class HOBottomTabBar: UITabBar
 {
     var callBack: (() -> ())?
     
@@ -23,11 +23,11 @@ class HOCommonTabBar: UITabBar
     private lazy var composeButton: UIButton =
     {
         let button = UIButton()
-        button.addTarget(self, action: #selector(composeButtonAction), for: UIControlEvents.touchUpInside)
-        button.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: UIControlState.normal)
-        button.setBackgroundImage(UIImage.init(named: "tabbar_compose_button_highlighted"), for: UIControlState.highlighted)
-        button.setImage(UIImage.init(named: "tabbar_compose_icon_add"), for: UIControlState.normal)
-        button.setImage(UIImage.init(named: "tabbar_compose_icon_add_highlighted"), for: UIControlState.highlighted)
+        button.addTarget(self, action: #selector(composeButtonAction), for: .touchUpInside)
+        button.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .normal)
+        button.setBackgroundImage(UIImage.init(named: "tabbar_compose_button_highlighted"), for: .highlighted)
+        button.setImage(UIImage.init(named: "tabbar_compose_icon_add"), for: .normal)
+        button.setImage(UIImage.init(named: "tabbar_compose_icon_add_highlighted"), for: .highlighted)
         button.sizeToFit()
         return button
     }()
@@ -45,13 +45,15 @@ class HOCommonTabBar: UITabBar
     
     private func setupUI()
     {
+        backgroundImage = UIImage.init(named: "tabbar_background")
         addSubview(composeButton)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        composeButton.center = self.center
+        composeButton.centerX = width / 2
+        composeButton.centerY = height / 2
         let buttonWidth = width / 5
         
         var index = 0
@@ -70,7 +72,6 @@ class HOCommonTabBar: UITabBar
                 }
             }
         }
-        
     }
     
     
