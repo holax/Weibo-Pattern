@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D03FC8821DEF0BE6009EB262 /* HOBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC87C1DEF0BE6009EB262 /* HOBaseTabBarController.swift */; };
+		D03FC8861DEF0EAB009EB262 /* HONavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC8851DEF0EAB009EB262 /* HONavigationController.swift */; };
+		D03FC8881DEF0F1C009EB262 /* HOHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC8871DEF0F1C009EB262 /* HOHomeController.swift */; };
+		D03FC88A1DEF0F27009EB262 /* HOMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC8891DEF0F27009EB262 /* HOMessageController.swift */; };
+		D03FC88E1DEF0F3C009EB262 /* HOProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC88D1DEF0F3C009EB262 /* HOProfileController.swift */; };
+		D03FC8901DEF1015009EB262 /* HODiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC88F1DEF1015009EB262 /* HODiscoverController.swift */; };
+		D03FC8941DEF10DF009EB262 /* HOCommonTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC8931DEF10DF009EB262 /* HOCommonTabBar.swift */; };
+		D03FC8961DEF2172009EB262 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC8951DEF2172009EB262 /* UIView+Extension.swift */; };
+		D03FC8981DEF2365009EB262 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC8971DEF2365009EB262 /* UIBarButtonItem+Extension.swift */; };
+		D03FC89A1DEF2D8E009EB262 /* HOTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03FC8991DEF2D8E009EB262 /* HOTestController.swift */; };
 		D0C0F5721DEE728100162E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0F5711DEE728100162E55 /* AppDelegate.swift */; };
 		D0C0F5791DEE728100162E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C0F5781DEE728100162E55 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D03FC87C1DEF0BE6009EB262 /* HOBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOBaseTabBarController.swift; sourceTree = "<group>"; };
+		D03FC8851DEF0EAB009EB262 /* HONavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HONavigationController.swift; sourceTree = "<group>"; };
+		D03FC8871DEF0F1C009EB262 /* HOHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOHomeController.swift; sourceTree = "<group>"; };
+		D03FC8891DEF0F27009EB262 /* HOMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOMessageController.swift; sourceTree = "<group>"; };
+		D03FC88D1DEF0F3C009EB262 /* HOProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOProfileController.swift; sourceTree = "<group>"; };
+		D03FC88F1DEF1015009EB262 /* HODiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HODiscoverController.swift; path = "Weibo-Pattern/Classes/View/Discover/HODiscoverController.swift"; sourceTree = SOURCE_ROOT; };
+		D03FC8931DEF10DF009EB262 /* HOCommonTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOCommonTabBar.swift; sourceTree = "<group>"; };
+		D03FC8951DEF2172009EB262 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D03FC8971DEF2365009EB262 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		D03FC8991DEF2D8E009EB262 /* HOTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOTestController.swift; sourceTree = "<group>"; };
 		D0C0F56E1DEE728100162E55 /* Weibo-Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weibo-Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C0F5711DEE728100162E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0C0F5781DEE728100162E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,9 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				D03FC87B1DEF0BE6009EB262 /* Base */,
-				D03FC87D1DEF0BE6009EB262 /* Discovery */,
 				D03FC87E1DEF0BE6009EB262 /* Home */,
 				D03FC87F1DEF0BE6009EB262 /* Message */,
+				D03FC87D1DEF0BE6009EB262 /* Discover */,
 				D03FC8801DEF0BE6009EB262 /* Profile */,
 			);
 			path = View;
@@ -63,21 +81,27 @@
 		D03FC87B1DEF0BE6009EB262 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D03FC8921DEF10C5009EB262 /* View */,
 				D03FC87C1DEF0BE6009EB262 /* HOBaseTabBarController.swift */,
+				D03FC8851DEF0EAB009EB262 /* HONavigationController.swift */,
+				D03FC8991DEF2D8E009EB262 /* HOTestController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		D03FC87D1DEF0BE6009EB262 /* Discovery */ = {
+		D03FC87D1DEF0BE6009EB262 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				D03FC88F1DEF1015009EB262 /* HODiscoverController.swift */,
 			);
+			name = Discover;
 			path = Discovery;
 			sourceTree = "<group>";
 		};
 		D03FC87E1DEF0BE6009EB262 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D03FC8871DEF0F1C009EB262 /* HOHomeController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -85,6 +109,7 @@
 		D03FC87F1DEF0BE6009EB262 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				D03FC8891DEF0F27009EB262 /* HOMessageController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -92,6 +117,7 @@
 		D03FC8801DEF0BE6009EB262 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D03FC88D1DEF0F3C009EB262 /* HOProfileController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -114,8 +140,18 @@
 		D03FC8841DEF0BF1009EB262 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D03FC8951DEF2172009EB262 /* UIView+Extension.swift */,
+				D03FC8971DEF2365009EB262 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D03FC8921DEF10C5009EB262 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D03FC8931DEF10DF009EB262 /* HOCommonTabBar.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D0C0F5651DEE728100162E55 = {
@@ -180,7 +216,7 @@
 		D0C0F5661DEE728100162E55 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = ZY;
+				CLASSPREFIX = HO;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = holaux;
@@ -226,8 +262,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03FC8861DEF0EAB009EB262 /* HONavigationController.swift in Sources */,
+				D03FC8881DEF0F1C009EB262 /* HOHomeController.swift in Sources */,
+				D03FC8981DEF2365009EB262 /* UIBarButtonItem+Extension.swift in Sources */,
+				D03FC89A1DEF2D8E009EB262 /* HOTestController.swift in Sources */,
 				D0C0F5721DEE728100162E55 /* AppDelegate.swift in Sources */,
+				D03FC8961DEF2172009EB262 /* UIView+Extension.swift in Sources */,
 				D03FC8821DEF0BE6009EB262 /* HOBaseTabBarController.swift in Sources */,
+				D03FC8941DEF10DF009EB262 /* HOCommonTabBar.swift in Sources */,
+				D03FC8901DEF1015009EB262 /* HODiscoverController.swift in Sources */,
+				D03FC88A1DEF0F27009EB262 /* HOMessageController.swift in Sources */,
+				D03FC88E1DEF0F3C009EB262 /* HOProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
